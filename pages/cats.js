@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Page from "../components/Page";
 import { StyledDescription, StyledMain, StyledTitle } from "./index";
 
 export default function cats() {
   return (
-    <Page>
+    <>
       <Head>
         <title>Cats</title>
       </Head>
@@ -16,6 +15,6 @@ export default function cats() {
           Get started by browsing pictures of cats.
         </StyledDescription>
       </StyledMain>
-    </Page>
+    </>
   );
 }

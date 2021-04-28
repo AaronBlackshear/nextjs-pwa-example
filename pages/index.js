@@ -3,8 +3,8 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const StyledMain = styled.main`
-  padding: 5rem 0;
-  flex: 1;
+  padding: 0;
+  flex: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import styled from "styled-components";
+import Link from "next/link";
 
 const ContainerStyles = styled.div`
   min-height: 100vh;
@@ -24,6 +25,15 @@ const PWAToastStyles = styled.div`
       color: #3498db;
       margin: 0px 5px;
     }
+  }
+`;
+
+const HeaderStyles = styled.header`
+  padding: 2rem 0;
+
+  a {
+    font-size: 36px;
+    font-weight: bold;
   }
 `;
 
@@ -97,5 +107,14 @@ export default function Page({ children, ...props }) {
     }
   }, []);
 
-  return <ContainerStyles {...props}>{children}</ContainerStyles>;
+  return (
+    <ContainerStyles {...props}>
+      <HeaderStyles>
+        <Link href="/">
+          <a>PetPics</a>
+        </Link>
+      </HeaderStyles>
+      {children}
+    </ContainerStyles>
+  );
 }

@@ -4,7 +4,7 @@ import { StyledDescription, StyledMain, StyledTitle } from "./index";
 
 export default function dogs() {
   return (
-    <Page>
+    <>
       <Head>
         <title>Dogs</title>
       </Head>
@@ -16,6 +16,6 @@ export default function dogs() {
           Get started by browsing pictures of dogs.
         </StyledDescription>
       </StyledMain>
-    </Page>
+    </>
   );
 }
